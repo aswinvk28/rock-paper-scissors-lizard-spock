@@ -1,0 +1,5 @@
+const EVALUATE_GAME_ITEM = "EVALUATE_GAME_ITEM";
+
+module.exports = {
+  EVALUATE_GAME_ITEM
+};
