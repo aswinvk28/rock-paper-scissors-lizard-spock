@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="container-fluid">
       <header className="row" style={style}>
-        <h2 className="mx-auto mt-5">Game - Rock Paper Scissors</h2>
+        <h2 className="mx-auto mt-5">Game - Rock Paper Scissors Lizard Spock</h2>
       </header>
       <section>
         <Game />

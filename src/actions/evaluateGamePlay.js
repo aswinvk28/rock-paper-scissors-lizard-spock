@@ -5,7 +5,7 @@ const evaluateGamePlay = (name) => {
     return {
       type: EVALUATE_GAME_ITEM,
       item: {
-        code: Math.ceil(Math.random() * 3) - 1,
+        code: Math.ceil(Math.random() * playItems.length) - 1,
         name: name,
         point: 1
       },

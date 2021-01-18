@@ -7,13 +7,18 @@ var computerStyle = {"height": "40px", "width": "40px", "display": "block"};
 const ROCK = "Rock";
 const PAPER = "Paper";
 const SCISSORS = "Scissors";
+const LIZARD = "Lizard";
+const SPOCK = "Vulcan";
 
-const playItems = [ROCK, PAPER, SCISSORS];
+const playItems = [ROCK, PAPER, SCISSORS, LIZARD, SPOCK];
 
+//  Computer: [Rock, Paper, Scissors, Lizard, Spock]
 const rulesTable = [
-    [null, "Computer", "Human"],
-    ["Computer", null, "Human"],
-    ["Computer", "Human", null]
+    [null, "Computer", "Human", "Human", "Computer"], // Rock
+    ["Human", null, "Computer", "Computer", "Human"], // Paper
+    ["Computer", "Human", null, "Human", "Computer"], // Scissors
+    ["Human", "Human", "Computer", null, "Computer"], // Lizard
+    ["Human", "Computer", "Human", "Computer", null] // Spock
 ];
 
 const Playables = props => {
