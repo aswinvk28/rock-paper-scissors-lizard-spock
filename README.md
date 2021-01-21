@@ -43,3 +43,6 @@ Visit http://localhost:3000
 
 ```
 
+## **Run GameBot on React Game**
+
+Visit http://localhost:3000 and Press the Game Start button which will automatically start the Game.

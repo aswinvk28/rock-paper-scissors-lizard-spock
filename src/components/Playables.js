@@ -21,6 +21,14 @@ const rulesTable = [
     ["Human", "Computer", "Human", "Computer", null] // Spock
 ];
 
+function start(props) {
+    window.setInterval(function() {
+        var idx = Math.floor(Math.random() * playItems.length);
+        var name = playItems[idx];
+        props.onSelect(name);
+    }, 800);
+}
+
 const Playables = props => {
     var humanPlayColumn = props.gameState[2].indexOf(1), 
     computerCodeColumn = props.gameState[3].indexOf(1);
@@ -28,6 +36,11 @@ const Playables = props => {
     var cwin = props.gameState[1].reduce((accumulator, currentValue) => accumulator + currentValue);
     return (
         <div className="clearfix">
+            <div className="row">
+                <div className="col">
+                    <button className="btn btn-primary" onClick={() => start(props)}>Game Start</button>
+                </div>
+            </div>
             <div className="row">
                 {playItems.map((name, index) => {
                     var filename = "images/icon-" + name + ".png";
