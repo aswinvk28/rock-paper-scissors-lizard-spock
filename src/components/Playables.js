@@ -35,7 +35,7 @@ const Playables = props => {
     var hwin = props.gameState[0].reduce((accumulator, currentValue) => accumulator + currentValue)
     var cwin = props.gameState[1].reduce((accumulator, currentValue) => accumulator + currentValue);
     return (
-        <div className="container">
+        <div className="container-fluid">
             <div className="clearfix">
                 <div className="row">
                     <div className="col">

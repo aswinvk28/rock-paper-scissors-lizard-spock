@@ -35,3 +35,12 @@
 .row .col {
   margin-bottom: 20px;
 }
+
+.row .col button.btn-block {
+  font-size: 10px;
+}
+
+.row .col button.btn-block img {
+  width: 35px;
+  height: 35px;
+}
